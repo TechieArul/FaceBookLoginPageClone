@@ -1,0 +1,342 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body{
+    background-color: #f0f2f5;
+}
+
+.big_containner{
+    padding: 30px;
+    margin: 100px auto;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.login_form{
+    margin-left: 150px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    width: 500px;
+    height: auto;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.097);
+    
+}
+
+#email{
+    display: block;
+    border: 2px solid rgb(190, 186, 186);
+    border-radius: 5px;
+    width: 86%;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+#email::placeholder{
+    font-size: 20px;
+}
+
+#email:focus{
+    outline-color: #0866ff;
+}
+
+#password{
+    display: block;
+    border: 2px solid rgb(190, 186, 186);
+    border-radius: 5px;
+    width: 86%;
+    padding: 20px;
+    margin: 10px;
+}
+
+#password:focus{
+    outline-color: #0866ff;
+}
+
+#password::placeholder{
+    font-size: 20px;
+}
+#log_in_button{
+    display: block;
+    border-color: transparent;
+    width: 95%;
+    padding: 15px 20px 15px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #0866ff;
+    margin: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.login_form a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #0866ff;
+    margin: 30px;
+    font-size: 20px;
+}
+
+#create_account_button{
+    display: block;
+    border-color: transparent;
+    width: 55%;
+    padding: 20px 20px 20px 20px;
+    border-radius: 8px;
+    color: white;
+    background-color: #42b72a;
+    margin: 10px;
+    font-weight: bold;
+    margin-left: 25%;
+    font-size: 20px;
+    
+
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.269);
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+.login-header{
+    text-align: center;
+}
+
+.para{
+    margin-top: 20px;
+    font-size: 19px;
+    display: block;
+
+}
+
+.facebook_logo_containner{
+    margin-right: 150px;
+    margin-top: 40px;
+}
+
+.facebook_logo_containner img{
+    width: 400px;
+
+}
+
+.facebook_logo_containner p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 20px;
+    font-size: 35px;
+    text-align: left;
+}
+
+.footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    height: 280px;
+    background-color: white;
+}
+
+.content{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    height: 100%;
+}
+
+.top-links{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.footer_divider{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.269);
+    margin: 20px 0px 20px 0px;
+}
+
+.top-links li{
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+.plus_button{
+    padding: 0px 13px 0px 13px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid rgba(0, 0, 0, 0.18);
+}
+
+.top-links li a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: grey;
+    font-size: 14px;
+}
+
+.bottom_containner{
+    color: grey;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.copy_right{
+    margin-top: 30px;
+    font-size: 15px;
+    color: grey;
+}
+
+@media screen and (max-width:1600px) {
+    .facebook_logo_containner{
+        margin-right: 30px;
+
+    }
+    .login_form{
+        margin-left: 30px;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    .big_containner{
+        flex-direction: column;
+    }
+
+    
+    .facebook_logo_containner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        padding: 10px;
+
+    }
+    .facebook_logo_containner img{
+        width: 200px;
+    }
+
+    .facebook_logo_containner p{
+        text-align: center;
+        font-size: 15px;
+        margin: 0px;
+    }
+
+    .login_form{
+        width: 90%;
+        margin: 0px;
+    }
+
+    #email{
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+    #email::placeholder{
+        font-size: 15px;
+    }
+    
+    #password{
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+    #password::placeholder{
+        font-size: 15px;
+    }
+
+    #log_in_button{
+        font-size: 17px;
+        padding: 8px 10px;
+        width: 90%;
+    }
+
+    #create_account_button{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .login-header{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .big_containner{
+        padding: 0px;
+        margin: 100px auto;
+    }
+
+    .login_form{
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .login_form a{
+        font-size: 15px;
+    }
+
+    #create_account_button{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    .para{
+        font-size: 14px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .footer{
+        position: relative;
+        margin: 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .content{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .plus_button{
+        display: none;
+    }
+
+    .top-links li a{
+        font-size: 10px;
+    }
+
+    .bottom_containner{
+        font-size: 10px;
+    }
+
+
+
+    
+
+    
+}
